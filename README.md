@@ -1,11 +1,17 @@
-# _printf - Custom printf Function in C
+# 🖨️ holbertonschool-printf
 
-This project is a simplified implementation of the C standard library function `printf'.
-It is designed to demonstrate understanding of variadic functions, low-level string manipulation, and output formatting in C.
+Welcome to the `_printf` project – a simplified custom version of the C `printf` function! 
+This project is part of the **Low-Level Programming** curriculum at Holberton School.
 
+# 📚 _printf Description - Custom printf Function in C
+
+This project aims to:
+- Implement a custom `_printf` function that mimics the standard C `printf`
+- Practice working with `variadic functions`, format specifiers, and standard output
+- Strengthen teamwork and modular C programming 🧠
 ---
 
-## Features
+## 🛠️ Features
 
 The `_printf` function supports the following conversion specifiers:
 
@@ -28,7 +34,7 @@ The following diagram shows the flow of the `_printf` function:
 
 ---
 
-## File Structure
+## 📂 File Structure
 <pre>
 holbertonschool_printf/
 ├── README.md          # Project overview, usage, compilation instructions
@@ -46,14 +52,16 @@ holbertonschool_printf/
 </pre>
 ---
 
-## Compilation
+## 🔧 How to Compile
 
-To compile the project, use the following command:
-- gcc -Wall -Werror -Wextra -pedantic -std=gnu89 .c helpers/.c -o printf_exec
+To compile the project, run:
 
+```bash
+gcc -Wall -Wextra -Werror -pedantic -std=gnu89 *.c -o printf
+```
 ---
 
-## Usage Example
+## 🧩 Usage Example
 
 ```c
 _printf("Hello, %s! Your score is %d%% on your group project.\n", "AnnaMaddySylvia", 100);
@@ -64,7 +72,7 @@ Hello, AnnaMaddySylvia! Your score is 100% on your group project.
 
 ---
 
-## Authorized Functions and Macros
+## ✅ Authorized Functions and Macros
 
 - write
 - va_start, va_arg, va_end, va_copy
@@ -72,9 +80,25 @@ Hello, AnnaMaddySylvia! Your score is 100% on your group project.
 
 ---
 
-## Authors
+## 🤝 Authors
 
 - Anna [https://github.com/Anna-Halaapiapi](https://github.com/Anna-Halaapiapi)
 - Madison [https://github.com/madisonfleming](https://github.com/madisonfleming)
 - Sylvia [https://github.com/shihuaxie](https://github.com/shihuaxie)
+
+---
+
+## 🧪 Testing
+Run:
+```bash
+./printf
+```
+Check outputs for:
+- %c, %s, %%, %d, %i
+- NULL handling and edge cases
+
+---
+## 🚀 GitHub Repo
+[https://github.comshihuaxie/holbertonschool-printf.git](https://github.com/shihuaxie/holbertonschool-printf)
+
 
