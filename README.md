@@ -44,7 +44,7 @@ holbertonschool-printf/
 ## Compilation
 
 To compile the project, use the following command:
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 .c helpers/.c -o printf_exec
+- gcc -Wall -Werror -Wextra -pedantic -std=gnu89 .c helpers/.c -o printf_exec
 
 ---
 
