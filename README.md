@@ -54,7 +54,8 @@ gcc -Wall -Werror -Wextra -pedantic -std=gnu89 .c helpers/.c -o printf_exec
 _printf("Hello, %s! Your score is %d%% on your group project.\n", "AnnaMaddySylvia", 100);
 
 Output:
-Hello, AnnaMaddySylvia! Your score is %d%% on your group project.
+Hello, AnnaMaddySylvia! Your score is 100% on your group project.
+```
 
 ---
 
@@ -68,7 +69,7 @@ Hello, AnnaMaddySylvia! Your score is %d%% on your group project.
 
 ## Authors
 
-- Anna @https://github.com/Anna-Halaapiapi
-- Madison @https://github.com/madisonfleming
-- Sylvia @https://github.com/shihuaxie
+- Anna [https://github.com/Anna-Halaapiapi](https://github.com/Anna-Halaapiapi)
+- Madison [https://github.com/madisonfleming](https://github.com/madisonfleming)
+- Sylvia [https://github.com/shihuaxie](https://github.com/shihuaxie)
 
