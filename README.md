@@ -25,20 +25,21 @@ The `_printf` function supports the following conversion specifiers:
 ---
 
 ## File Structure
-holbertonschool-printf/
-|--- README.md       # Project overview, usage, compilation instructions
-|--- main.h          # Header file with all function prototypes and includes
-|--- _printf.c       # Main implementation of the _printf function
-|--- helpers/        # Folder for helper functions
-|    |-- _putchar.c      # Writes a single char to stdout
-|    |-- print_char.c    # Handles %c: character output
-|    |-- print_string.c  # Handles %s: string output (NULL-safe)
-|    |-- print_percent.c # Handles %%: prints percent symbol
-|    |-- print_number.c  # Handles %d and %i: integer output
-|--- test/
-|    |-- main.c          # Test cases for _printf
-|--- man_3_printf    # Man page for _printf (Task 2)
-
+<pre>
+holbertonschool_printf/
+├── README.md          # Project overview, usage, compilation instructions
+├── main.h             # Header file with all function prototypes and includes
+├── _printf.c          # Main implementation of the _printf function
+├── helpers/           # Folder for helper functions
+│   ├── _putchar.c     # Writes a single char to stdout
+│   ├── print_char.c   # Handles %c: character output
+│   ├── print_string.c # Handles %s: string output (NULL-safe)
+│   ├── print_percent.c# Handles %%: prints percent symbol
+│   └── print_number.c # Handles %d and %i: integer output
+├── test/              # Custom test directory
+│   └── main.c         # Test cases for _printf
+└── man_3_printf       # Man page for _printf (Task 2)
+</pre>
 ---
 
 ## Compilation
