@@ -1,29 +1,36 @@
-// #include "main.h" //
+#include "main.h"
 #include <stdio.h>
-#include <limits.h>
 /**
- * print_number - print number
+ * print_numbers - print number
  * @args: argument to print
  * Return: number
  */
 int print_numbers(va_list *args)
 {
-	// int n = va_arg(args, int);//
+	int n = va_arg(args, int);
 	int sign = 0;
-	int n;
-	int num;
+	unsigned int num;
+	int div = 1;
 
-	if (n < 0)
+	if (num < 0)
 	{
-		sign = sign + putchar('-');
-		num = -n;
+		sign = sign + _putchar('-');
+		num = -num;
 	}
 	else
 	{
 		num = n;
 	}
 
-	putchar((n % 10) + '0');
-
-printf("%d\n", num);
+	while (num / div >= 10)
+	{
+		div = div * 10;
+	}
+	while (div)
+	{
+		sign += _putchar(num / div + '0');
+		num = num % div;
+		div = div / 10;
+	}
+return (num);
 }
