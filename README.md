@@ -45,7 +45,7 @@ holbertonschool_printf/
 │   ├── print_char.c   # Handles %c: character output
 │   ├── print_string.c # Handles %s: string output (NULL-safe)
 │   ├── print_percent.c# Handles %%: prints percent symbol
-│   └── print_number.c # Handles %d and %i: integer output
+│   └── print_numbers.c # Handles %d and %i: integer output
 ├── test/              # Custom test directory
 │   └── main.c         # Test cases for _printf
 └── man_3_printf       # Man page for _printf (Task 2)
