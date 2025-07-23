@@ -7,15 +7,15 @@
  */
 int print_numbers(va_list *args)
 {
-	int n = va_arg(args, int);
+	int n = va_arg(*args, int);
 	int sign = 0;
-	unsigned int num;
+	int num;
 	int div = 1;
 
-	if (num < 0)
+	if (n < 0)
 	{
 		sign = sign + _putchar('-');
-		num = -num;
+		num = -n;
 	}
 	else
 	{
