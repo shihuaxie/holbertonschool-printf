@@ -9,17 +9,17 @@ int print_numbers(va_list *args)
 {
 	int n = va_arg(*args, int);
 	int sign = 0;
-	int num = 0;
+	unsigned int num;
 	int div = 1;
 
 	if (n < 0)
 	{
 		sign = sign + _putchar('-');
-		num = -n;
+		num = (unsigned int)-n;
 	}
 	else
 	{
-		num = n;
+		num = (unsigned int)n;
 	}
 
 	while (num / div >= 10)
