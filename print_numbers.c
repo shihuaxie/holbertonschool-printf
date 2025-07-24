@@ -3,18 +3,18 @@
 /**
  * print_numbers - print number
  * @args: argument to print
- * Return: number
+ * Return: number of characters printed
  */
 int print_numbers(va_list *args)
 {
 	int n = va_arg(*args, int);
-	int sign = 0;
+	int count = 0;
 	unsigned int num;
 	int div = 1;
 
 	if (n < 0)
 	{
-		sign = sign + _putchar('-');
+		count = count + _putchar('-');
 		num = (unsigned int)-n;
 	}
 	else
@@ -28,9 +28,9 @@ int print_numbers(va_list *args)
 	}
 	while (div)
 	{
-		sign += _putchar(num / div + '0');
+		count += _putchar(num / div + '0');
 		num = num % div;
 		div = div / 10;
 	}
-return (num);
+return (count);
 }
