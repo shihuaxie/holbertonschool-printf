@@ -15,7 +15,7 @@ int print_string(va_list *args)
 	int count = 0;
 
 	if (!str)
-		return (NULl);
+		return (0);
 
 	while (str[i])
 	{
