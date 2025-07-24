@@ -9,7 +9,7 @@ int print_numbers(va_list *args)
 {
 	int n = va_arg(*args, int);
 	int sign = 0;
-	int num;
+	int num = 0;
 	int div = 1;
 
 	if (n < 0)
