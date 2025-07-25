@@ -1,1 +1,75 @@
-/* man page */
+.TH _PRINTF 3 "25 July 2025" "Version 1.0" "Holberton Printf Project - User Manual"
+
+.SH NAME
+_printf \- a function that produces output according to a format specifier.
+
+.SH SYNOPSIS
+.nf
+#include "main.h"
+
+int _printf(const char *format, ...);
+.fi
+
+.SH DESCRIPTION
+The _printf function is a custom version of the C printf function that
+produces output according to a format specifier. The _printf function works
+similarly to the standard C library printf, but is a simplified version that
+supports a limited set of format specifiers. _printf processes a format string
+that can contain ordinary characters and format specifiers. Each supported
+format specifier begins with a % character and is replaced with its
+corresponding variadic argument.
+
+_printf supports the following format specifiers:
+
+.TP
+.B %c
+Prints a single character.
+
+.TP
+.B %s
+Prints a string.
+
+.TP
+.B %d
+Prints an integer.
+
+.TP
+.B %i
+Prints an integer (same as %d).
+
+.TP
+.B %%
+Prints a single literal percent symbol.
+
+.SH RETURN VALUE
+.TP
+Successful Return Value
+If successful, _printf returns the total number of characters printed to standard output (excluding any null terminators at the end of strings).
+.TP
+Unsuccessful Return Value
+If the format string is NULL or if the format string ends with a % symbol, _printf will return -1, signalling an error to the user.
+
+.SH EXAMPLE
+.B Example:
+.nf
+_printf("Hello, %s! Your score is %d%% on your group project.\n", "AnnaMaddySylvia", 100);
+
+Output:
+Hello, AnnaMaddySylvia! Your score is 100% on your group project.
+.fi
+
+.SH AUTHORS
+Sylvia Xie, Madison Fleming & Anna Halaapiapi
+
+.SH BUGS
+There are no known bugs at this time. If any bugs are found, please report them to the authors of this function.
+
+.SH FUTURE EXTENSIONS
+Future versions may extend the supported format specifiers to include: %u, %o, %x, %X, %p, %r, %R.
+
+.SH SEE ALSO
+.BR write (2),
+.BR printf (3),
+.BR va_start (3),
+.BR va_arg (3),
+.BR va_end (3).
