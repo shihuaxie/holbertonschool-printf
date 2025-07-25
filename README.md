@@ -48,6 +48,7 @@ holbertonschool_printf/
 │   └── print_numbers.c # Handles %d and %i: integer output
 ├── test/              # Custom test directory
 │   └── main.c         # Test cases for _printf
+├── images/            # Assets for readme
 └── man_3_printf       # Man page for _printf (Task 2)
 </pre>
 ---
