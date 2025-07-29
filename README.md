@@ -92,7 +92,7 @@ Hello, AnnaMaddySylvia! Your score is 100% on your group project.
 ## 🧪 Testing
 Run:
 ```bash
-./printf
+./printf_test
 ```
 Check outputs for:
 - %c, %s, %%, %d, %i
