@@ -58,7 +58,7 @@ holbertonschool_printf/
 To compile the project, run:
 
 ```bash
-gcc -Wall -Wextra -Werror -pedantic -std=gnu89 *.c -o printf
+gcc -Wall -Wextra -Werror -pedantic -I. _printf.c helpers/*.c test/main.c -o printf_test
 ```
 ---
 
